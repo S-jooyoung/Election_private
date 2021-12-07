@@ -28,7 +28,7 @@
                           <span>이재명</span>
                         </div>
                         <a href="meeting-details.html"
-                        ><img src="assets/images/meeting-01.jpg" alt=""
+                        ><img src="../resources/images/meeting-01.jpg" alt=""
                         /></a>
                       </div>
                       <div class="down-content">
@@ -63,7 +63,7 @@
                           <span>윤석열</span>
                         </div>
                         <a href="meeting-details.html"
-                        ><img src="assets/images/meeting-02.jpg" alt=""
+                        ><img src="../resources/images/meeting-02.jpg" alt=""
                         /></a>
                       </div>
                       <div class="down-content">
@@ -98,7 +98,7 @@
                           <span>윤석열</span>
                         </div>
                         <a href="meeting-details.html"
-                        ><img src="assets/images/meeting-03.jpg" alt=""
+                        ><img src="../resources/images/meeting-03.jpg" alt=""
                         /></a>
                       </div>
                       <div class="down-content">
@@ -135,7 +135,7 @@
                           <span>안철수</span>
                         </div>
                         <a href="meeting-details.html"
-                        ><img src="assets/images/meeting-04.jpg" alt=""
+                        ><img src="../resources/images/meeting-04.jpg" alt=""
                         /></a>
                       </div>
                       <div class="down-content">
@@ -172,7 +172,7 @@
                           <span>안철수</span>
                         </div>
                         <a href="meeting-details.html"
-                        ><img src="assets/images/meeting-02.jpg" alt=""
+                        ><img src="../resources/images/meeting-02.jpg" alt=""
                         /></a>
                       </div>
                       <div class="down-content">
@@ -208,7 +208,7 @@
                           <span>심상정</span>
                         </div>
                         <a href="meeting-details.html"
-                        ><img src="assets/images/meeting-03.jpg" alt=""
+                        ><img src="../resources/images/meeting-03.jpg" alt=""
                         /></a>
                       </div>
                       <div class="down-content">
@@ -245,7 +245,7 @@
                           <span>이재명</span>
                         </div>
                         <a href="meeting-details.html"
-                        ><img src="assets/images/meeting-01.jpg" alt=""
+                        ><img src="../resources/images/meeting-01.jpg" alt=""
                         /></a>
                       </div>
                       <div class="down-content">
@@ -281,7 +281,7 @@
                           <span>심상정</span>
                         </div>
                         <a href="meeting-details.html"
-                        ><img src="assets/images/meeting-02.jpg" alt=""
+                        ><img src="../resources/images/meeting-02.jpg" alt=""
                         /></a>
                       </div>
                       <div class="down-content">
@@ -316,7 +316,7 @@
                           <span>안철수</span>
                         </div>
                         <a href="meeting-details.html"
-                        ><img src="assets/images/meeting-01.jpg" alt=""
+                        ><img src="../resources/images/meeting-01.jpg" alt=""
                         /></a>
                       </div>
                       <div class="down-content">

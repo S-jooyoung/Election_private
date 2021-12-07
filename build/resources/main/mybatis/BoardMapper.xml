@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper name="com.hustar.edu.vote.mapper.BoardMapper">
+    <insert id="insertBoard" parameterType="BoardDTO">
+        INSERT INTO tb_board()
+    </insert>
+</mapper>
