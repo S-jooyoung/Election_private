@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hustar.edu.vote.mapper.ProductMapper">
+	<sql id="selectProduct">
+		select id,name,maker,price from rest_product
+	</sql>
+	<select id="getAllProductList"  resultType="productVO">
+ 		<include refid="selectProduct"></include>
+ 		order by id desc
+ 	</select>
+ 	<select id="findProductById"  resultType="productVO" >
+ 		<include refid="selectProduct"></include>
+ 		where id=#{value}
+ 	</select>
+ 	<insert id="registerProduct" parameterType="productVO">
+ 		insert into rest_product(name,maker,price)
+		values(#{name},#{maker},#{price})
+ 	</insert>
+ 	<delete id="deleteProduct" parameterType="string">
+ 		delete from rest_product where id=#{value}
+ 	</delete>
+ 	<update id="updateProduct" parameterType="productVO">
+ 		update rest_product set name=#{name},maker=#{maker},price=#{price} 
+ 		where id=#{id}
+ 	</update>
+</mapper>
