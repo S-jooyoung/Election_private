@@ -32,34 +32,35 @@ public class tb_user {
 
     private String nickname;
 
-    private String profile_img;
+    @ColumnDefault("none.jpg")
+    private String profile_img = "none.jpg";
+
+    // 1 - Y (default), 2 - N
+    @ColumnDefault("Y")
+    private String use_yn = "Y";
 
     private String gender;
+
+    private String age_range;
 
     // Enum 사용 (Enum 안에 정의된 문자들만 쓸수 있기 때문에 안정성이 올라간다.)
     // DB는 RoleType이라는게 없다.
     @Enumerated(EnumType.STRING)
     private RoleType role;
 
-    // 1 - Y (default), 2 - N
-    @ColumnDefault("Y")
-    private String use_yn;
-
     @CreationTimestamp  // 시간이 자동 입력
     private Date sysregdate;
-
-    private int sysmodidx;
 
     private Date sysmoddate;
 
     @Builder
-    public tb_user(String name, String username, String password, String email, String nickname, String gender, String profile_img) {
+    public tb_user(String name, String username, String password, String email, String nickname, String gender, String age_range, String use_yn, String profile_img) {
         this.name = name;
         this.username = username;
         this.password = password;
         this.email = email;
         this.nickname = nickname;
         this.gender = gender;
-        this.profile_img = profile_img;
+        this.age_range = age_range;
     }
 }
