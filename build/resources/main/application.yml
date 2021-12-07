@@ -46,3 +46,7 @@ server:
 
 cos:
   key: cos265389QWas!@
+
+devtools:
+  restart:
+    enalbed: true
