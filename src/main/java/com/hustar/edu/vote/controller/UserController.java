@@ -161,7 +161,7 @@ public class UserController {
                 .password(cosKey)
                 .email(kakaoProfile.getKakao_account().getEmail())
                 .nickname(maskedName)
-                .profile_img("none.jpg")
+                .age_range(kakaoProfile.getKakao_account().getAge_range())
                 .build();
 
         // 가입자 혹은 비 가입자 체크해서 처리
