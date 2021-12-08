@@ -47,8 +47,12 @@ dependencies {
 	// https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs
 	implementation 'org.springframework.security:spring-security-taglibs:5.6.0'
 
+
+
 	runtimeOnly('org.springframework.boot:spring-boot-devtools')  // 이녀석을 설치합니다.
 	apply plugin: 'idea'
+
+
 
 }
 
