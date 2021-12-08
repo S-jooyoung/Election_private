@@ -39,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
               dataType: 'json',
 
                 success: function(info) {
-                  alert(info);
                   successCallback(info);
                 }
 

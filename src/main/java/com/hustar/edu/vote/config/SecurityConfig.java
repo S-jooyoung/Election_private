@@ -40,16 +40,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     protected void configure(HttpSecurity http) throws Exception {
+        http.authorizeRequests()
+                .antMatchers().authenticated()      // antMatchers(페이지 링크).authenticated() 로그인 검사 -> 로그인 된 회원만 접근가능
+                .antMatchers("/vote/boardCreate").hasAuthority("ROLE_USER")     // 권한 검사
+                .anyRequest().permitAll();  // 그 외 모든 사용자 접근가능
         http
-            .authorizeRequests()
-                .antMatchers("/**","/auth/**","/js/**","/css/**","/images/**")
-                .permitAll()
-                .anyRequest()
-                .authenticated();
-//            .and()
-//                .formLogin()
-//                .loginPage("/vote/main")
-//                .loginProcessingUrl("/auth/loginProc") // 스프링 시큐리티가 해당 주소로 요청오는 로그인을 가로채서 대신 로그인 해준다.
-//                .defaultSuccessUrl("/vote/main");   // 성공 시 가는곳
+                .exceptionHandling()
+                .accessDeniedPage("/vote/main");
+
+        /**
+         * 로그인 disable 처리
+         */
+        //security.httpBasic().disable();
+        http.cors().and();
+        http.csrf().disable();
     }
 }

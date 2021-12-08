@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 public class UserServiceImpl implements UserService {
 
     @Autowired
-    private UserMapper mapper;
+    private UserMapper userMapper;
 
     @Autowired
     private BCryptPasswordEncoder encoder;
@@ -27,18 +27,18 @@ public class UserServiceImpl implements UserService {
 
         user.setPassword(encPassword);
         user.setRole(RoleType.USER);
-        mapper.save(user);
+        userMapper.save(user);
     }
 
     @Transactional(readOnly=true)// select할때 트랜잭션 시작, 서비스 종료시에 트랜잭션 종료(정합성)
     public tb_user login(String username, String password) {
-        return mapper.findByUsernameAndPassword(username, password);
+        return userMapper.findByUsernameAndPassword(username, password);
 //        return mapper.login(user.getUsername(), user.getPassword());
     }
 
     @Transactional(readOnly = true)
     public tb_user searchUser(String username) {
-        tb_user user = mapper.findByUsername(username).orElseGet(()->{
+        tb_user user = userMapper.findByUsername(username).orElseGet(()->{
            return new tb_user();
         });
         return user;
@@ -46,10 +46,10 @@ public class UserServiceImpl implements UserService {
 
     public tb_user login(String username) {
         System.out.println("로그인 구현체");
-        return mapper.login(username);
+        return userMapper.login(username);
     }
 
     public void updateUser(String nickname, String username) {
-        mapper.updateUser(nickname, username);
+        userMapper.updateUser(nickname, username);
     }
 }

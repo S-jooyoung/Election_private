@@ -195,7 +195,11 @@ public class UserController {
 //        System.out.println("username : " + username);
 //        System.out.println("password : " + password);
 
-        return "redirect:/";
+        String referer = request.getHeader("referer");
+
+        System.out.println("referer : " + referer);
+
+        return "redirect:" + referer;
     }
 
 }

@@ -6,17 +6,18 @@
     ></script>
 
 <section class="board">
+  <form action="/vote/boardCreate" method="post">
   <div class="board-wrap">
     <div class="board-title">
       <p>제목</p>
       <span>
-        <input type="text" />
+        <input type="text" name="title" />
       </span>
     </div>
     <div class="row justify-content-md-center">
       <div class="col_c" >
         <div class="input-group">
-          <textarea class="form-control" id="p_content"></textarea>
+          <textarea class="form-control" id="p_content" name="content"></textarea>
           <script type="text/javascript">
             CKEDITOR.replace("p_content", { height: 500, width: 1200 });
           </script>
@@ -29,20 +30,21 @@
               <div class="row justify-content-md-center">
                 <div class="input-group mb-3">
                   <div class="custom-file">
-                    &nbsp;<input
-                          type="file"
-                          class="form-control-file"
-                          id="exampleFormControlFile1"
-                  />
+<%--                    &nbsp;<input--%>
+<%--                          type="file"--%>
+<%--                          class="form-control-file"--%>
+<%--                          id="exampleFormControlFile1"--%>
+<%--                  />--%>
                   </div>
                 </div>
             </span>
     </div>
     <div class="board-button">
       <a href="/vote/boardList"><button>돌아가기</button></a>
-      <a href="#none"><button>등록하기</button></a>
+      <a><button type="submit">등록하기</button></a>
     </div>
   </div>
+  </form>
 </section>
 
 <%@include file="../include/footer.jsp"%>

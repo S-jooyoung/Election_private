@@ -18,7 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
       initialView: 'dayGridMonth',   //초기 로드 될때 보이는 캘린더 화면( 기본 설정: 달)
       locale:'ko',                   //한국어 설정
 
-      
+
+
+
       eventClick: function (arg){
         //있는 일정 클릭시,
         console.log("#등록된 일정 클릭#");
@@ -37,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
               dataType: 'json',
 
                 success: function(info) {
-                  alert(info);
                   successCallback(info);
                 }
 

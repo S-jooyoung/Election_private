@@ -39,6 +39,10 @@ public class PrincipalDetail implements UserDetails {
         return user.getUsername();
     }
 
+    public Integer getIdx() {
+        return user.getIdx();
+    }
+
     // 계정이 만료되지 않았는지 리턴한다(true : 만료안됨)
     @Override
     public boolean isAccountNonExpired() {

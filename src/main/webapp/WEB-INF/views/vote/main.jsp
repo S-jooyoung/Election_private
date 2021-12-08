@@ -113,16 +113,14 @@
                     <li><a href="#team">대선 게시판</a></li>
                     <li><a href="#blog">모의 투표</a></li>
                     <li>
-                    <c:choose>
-                        <c:when test="${empty principal.username}">
-                          <a href="https://kauth.kakao.com/oauth/authorize?client_id=17d0622174b2b4cd77314e16dd2d9dde&redirect_uri=http://localhost:8080/auth/kakao/callback&response_type=code">로그인</a>
-                        </c:when>
-                      <c:otherwise>
+                      <sec:authorize access="!isAuthenticated()">
+                        <a href="https://kauth.kakao.com/oauth/authorize?client_id=17d0622174b2b4cd77314e16dd2d9dde&redirect_uri=http://localhost:8080/auth/kakao/callback&response_type=code">로그인</a>
+                      <%--<sec:authentication property="name" />님 안녕하세요 ^^ 예외--%>
+                      </sec:authorize>
+                      <sec:authorize access="isAuthenticated()">
                         <a href="#">로그아웃</a>
                         <a href="/vote/myProfileInfo"><p><c:out value="${principal.username}"/>님 환영합니다.</p></a>
-                      </c:otherwise>
-
-                    </c:choose>
+                      </sec:authorize>
                     </li>
                   </ul>
                 </div>
