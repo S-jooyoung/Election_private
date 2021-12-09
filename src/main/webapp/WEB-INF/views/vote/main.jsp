@@ -280,7 +280,7 @@
       <div id="portfoliowork">
         <div class="single_portfolio tile scale-anm  red ">
           <img src="../resources/images/pf1.jpeg" alt="" />
-          <a href="/vote/promiseList" class="portfolio-img">
+          <a href="/vote/promiseList">
             <div class="grid_item_overlay">
               <div class="separator4"></div>
               <h3>자세히보기</h3>

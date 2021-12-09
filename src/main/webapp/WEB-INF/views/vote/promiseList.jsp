@@ -68,7 +68,7 @@
                 </ul>
             </div>
             <div class="list-btn">
-                <a href="/vote/promiseDetail">글쓰기</a>
+                <a href="/vote/promiseCreate">글쓰기</a>
             </div>
 
             <div class="paging">

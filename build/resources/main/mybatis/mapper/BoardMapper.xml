@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.hustar.edu.vote.mapper.BoardMapper">
     <insert id="insertBoard" parameterType="BoardDTO">
-        insert into tb_dashboard(writer_idx, title, content) values (
-        #{writer_idx}, #{title}, #{content});
+        insert into tb_dashboard(writer_idx, title, content, total_cd) values (
+        #{writer_idx}, #{title}, #{content}, #{total_cd});
     </insert>
 </mapper>

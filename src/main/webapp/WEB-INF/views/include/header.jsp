@@ -57,6 +57,26 @@
 
     <!-- font Awesome-->
   <script src="https://kit.fontawesome.com/a4196a8ce8.js" crossorigin="anonymous"></script>
+
+    <script src="../resources/js/isotope.min.js"></script>
+    <script src="../resources/js/custom.js"></script>
+
+    <script src="../resources/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="../resources/js/vendor/bootstrap.min.js"></script>
+
+    <script src="../resources/js/jquery.magnific-popup.js"></script>
+    <script src="../resources/js/jquery.mixitup.min.js"></script>
+    <script src="../resources/js/jquery.easing.1.3.js"></script>
+    <script src="../resources/js/jquery.masonry.min.js"></script>
+
+    <!--slick slide js -->
+    <script src="../resources/css/slick/slick.js"></script>
+    <script src="../resources/css/slick/slick.min.js"></script>
+
+    <script src="../resources/js/jquery.countdown.min.js"></script>
+    <script src="../resources/js/plugins.js"></script>
+    <script src="../resources/js/main.js"></script>
+
   </head>
 
   <style>

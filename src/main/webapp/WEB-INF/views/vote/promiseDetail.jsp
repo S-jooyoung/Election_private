@@ -64,7 +64,7 @@
                     </a>
                 </div>
                 <div class="view-write-button">
-                    <a href="/vote/promiseDetail">
+                    <a href="/vote/promiseCreate">
                         <button>글쓰기</button>
                     </a>
                 </div>
