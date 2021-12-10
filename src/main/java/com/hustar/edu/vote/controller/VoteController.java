@@ -1,9 +1,8 @@
 package com.hustar.edu.vote.controller;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Controller
@@ -14,42 +13,46 @@ public class VoteController {
 		return "/vote/main";
 	}
 	@GetMapping("/vote/boardCreate")
-	public void voteBoardController() {
+	public String voteBoardController() {
 		log.info("VoteBoardPage");
-	}
-	@GetMapping("/vote/boardList")
-	public void voteBoardListController() {
-		log.info("VoteBoardListPage");
+		return "/vote/board/boardCreate";
 	}
 	@GetMapping("/vote/boardDetail")
-	public void voteBoardDetailController() {
+	public String voteBoardDetailController() {
 		log.info("VoteBoardDetailPage");
+		return "/vote/board/boardDetail";
 	}
 
 	@GetMapping("/vote/promiseDetail")
-	public void votePromiseDetailController() {
+	public String votePromiseDetailController() {
 		log.info("VotePromiseDetailPage");
+		return "/vote/promise/promiseDetail";
 	}
 	@GetMapping("/vote/promiseList")
-	public void votePromiseListController() {
+	public String votePromiseListController() {
 		log.info("VotePromiseListPage");
+		return "/vote/promise/promiseList";
 	}
 
 	@GetMapping("/vote/myProfileWrite")
-	public void voteMyProfileWriteController() {
+	public String voteMyProfileWriteController() {
 		log.info("VoteMyProfileWritePage");
+		return "/vote/profile/myProfileWrite";
 	}
 	@GetMapping("/vote/myProfileUpdate")
-	public void voteMyProfileUpdateController() {
+	public String voteMyProfileUpdateController() {
 		log.info("VoteMyProfileUpdatePage");
+		return "/vote/profile/myProfileUpdate";
 	}
 	@GetMapping("/vote/myProfileInfo")
-	public void voteMyProfileInfoController() {
+	public String voteMyProfileInfoController() {
 		log.info("VoteMyProfileInfoPage");
+		return "/vote/profile/myProfileInfo";
 	}
 
 	@GetMapping("/vote/behindList")
-	public void voteBehindListController() {
+	public String voteBehindListController() {
 		log.info("VoteBehindListPage");
+		return "/vote/behind/behindList";
 	}
 }

@@ -1,6 +1,6 @@
 package com.hustar.edu.vote.service;
 
-import com.hustar.edu.vote.dao.tb_user;
+import com.hustar.edu.vote.dto.tb_user;
 
 public interface UserService {
     public void insertUser(tb_user user);

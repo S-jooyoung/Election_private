@@ -1,8 +1,8 @@
 package com.hustar.edu.vote.api;
 
 import com.hustar.edu.vote.auth.PrincipalDetail;
-import com.hustar.edu.vote.dao.BoardDTO;
-import com.hustar.edu.vote.dao.ResponseDto;
+import com.hustar.edu.vote.dto.BoardDTO;
+import com.hustar.edu.vote.dto.ResponseDto;
 import com.hustar.edu.vote.service.PromiseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

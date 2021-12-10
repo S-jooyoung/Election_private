@@ -2,19 +2,16 @@ package com.hustar.edu.vote.controller;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.hustar.edu.vote.dao.Calendar;
+import com.hustar.edu.vote.dto.Calendar;
 import com.hustar.edu.vote.service.CalenService;
-import com.sun.org.apache.xpath.internal.objects.XString;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
-import java.util.function.Consumer;
 
 @Controller
 @RequestMapping("calendar.do")

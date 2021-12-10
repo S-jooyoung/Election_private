@@ -1,7 +1,6 @@
 package com.hustar.edu.vote.service;
 
-import com.hustar.edu.vote.dao.RoleType;
-import com.hustar.edu.vote.dao.tb_user;
+import com.hustar.edu.vote.dto.tb_user;
 import com.hustar.edu.vote.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +25,7 @@ public class UserServiceImpl implements UserService {
         String encPassword = encoder.encode(rowPassword);
 
         user.setPassword(encPassword);
-        user.setRole(RoleType.USER);
+        user.setRole("USER");
         userMapper.save(user);
     }
 

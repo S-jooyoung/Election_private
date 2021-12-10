@@ -1,6 +1,6 @@
 package com.hustar.edu.vote.service;
 
-import com.hustar.edu.vote.dao.Calendar;
+import com.hustar.edu.vote.dto.Calendar;
 import com.hustar.edu.vote.mapper.CalenDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

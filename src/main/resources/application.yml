@@ -30,7 +30,7 @@ spring:
             user_name_attribute: id
 
 mybatis:
-  type-aliases-package: com.hustar.edu.vote.dao
+  type-aliases-package: com.hustar.edu.vote.dto
   mapper-locations: classpath:mybatis/mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true

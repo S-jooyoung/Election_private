@@ -1,14 +1,22 @@
 package com.hustar.edu.vote.controller;
 
 //import com.hustar.edu.vote.auth.PrincipalDetail;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.hustar.edu.vote.dto.KakaoProfile;
+import com.hustar.edu.vote.dto.OAuthToken;
+import com.hustar.edu.vote.dto.tb_user;
+import com.hustar.edu.vote.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-        import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-        import org.springframework.http.ResponseEntity;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -17,17 +25,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.GetMapping;
-        import org.springframework.web.client.RestTemplate;
+import org.springframework.web.client.RestTemplate;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.hustar.edu.vote.dao.KakaoProfile;
-import com.hustar.edu.vote.dao.OAuthToken;
-        import com.hustar.edu.vote.dao.tb_user;
-import com.hustar.edu.vote.service.UserService;
-
-        import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletRequest;
 
 // 인증이 안된 사용자들이 출입할 수 있는 경로를 /auth/**를 허용
 // 그냥 주소가 /이면 index.jsp허용
@@ -195,11 +195,7 @@ public class UserController {
 //        System.out.println("username : " + username);
 //        System.out.println("password : " + password);
 
-        String referer = request.getHeader("referer");
-
-        System.out.println("referer : " + referer);
-
-        return "redirect:" + referer;
+        return "redirect:/";
     }
 
 }

@@ -10,6 +10,6 @@ public class PromiseController {
     @GetMapping("/vote/promiseCreate")
     public String promiseCreate() {
         log.info("promisePage");
-        return "vote/promiseCreate";
+        return "vote/promise/promiseCreate";
     }
 }

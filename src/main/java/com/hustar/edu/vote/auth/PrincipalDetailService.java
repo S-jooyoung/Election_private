@@ -1,6 +1,6 @@
 package com.hustar.edu.vote.auth;
 
-import com.hustar.edu.vote.dao.tb_user;
+import com.hustar.edu.vote.dto.tb_user;
 import com.hustar.edu.vote.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

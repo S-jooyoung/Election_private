@@ -1,10 +1,9 @@
 package com.hustar.edu.vote.mapper;
 
-import com.hustar.edu.vote.dao.tb_user;
+import com.hustar.edu.vote.dto.tb_user;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-
 
 import java.util.Optional;
 
